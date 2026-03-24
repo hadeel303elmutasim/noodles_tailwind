@@ -1,0 +1,462 @@
+<html>
+
+<head>
+    <title>Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-[#FDFBF0] font-serif antialiased">
+
+    <nav class="fixed top-0 left-0 w-full bg-[#3E2723] z-50 border-b border-[#A32424]/30 shadow-lg shadow-gray-900/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center flex-wrap">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-[#9B2226]">NOODLES</span>
+                <span class="text-xs bg-blue-50 text-[#9B2226] px-2 py-1 rounded-full font-medium hidden sm:block">Authentic Asian Cuisine</span>
+            </div>
+            <!--  Hamburger Button (Hidden on LG) -->
+        <button id="menu-btn" class="lg:hidden text-[#FDFBF0] order-2">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+            <!-- Nav Links -->
+            <div id="nav-links" class="hidden w-full lg:flex lg:items-center gap-8 lg:w-auto text-[#FDFBF0] font-medium">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-8 pt-6 lg:pt-0">
+                <a href="#" class="hover:text-[#A32424] transition">Home</a>
+                <a href="#" class="hover:text-[#A32424] transition">Menu</a>
+                <a href="#" class="hover:text-[#A32424] transition">Atmosphere</a>
+                <a href="#" class="hover:text-[#A32424] transition">Our Team</a>
+                <a href="#" class="hover:text-[#A32424] transition">Contact Us</a>
+
+                <a href="#" class="lg:hidden bg-[#A32424] text-center text-white py-3 rounded-lg">Reserve Now</a>
+            </div>
+            </div>
+            <!-- CTA Button -->
+            <a href="#" class="bg-[#1D1D1D] text-white px-6 py-2.5 rounded-lg font-semibold border-[#A32424]/40 hover:bg-[#7A1B1B] transition-all hover:shadow-lg hover:shadow-black/50 hidden lg:block">Reserve Now</a>
+       
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Section 1 -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:text-left gap-16 items-center text-center">
+
+            <!-- Left Content -->
+            <div class="order-2 lg:order-1">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                     <span class="text-[#7A1B1B]">Artisan Flavors</span> Timeless Traditions
+                </h1>
+                <p class="text-lg text-gray-500 mb-8 max-w-lg mx-auto leading-relaxed">
+                    Experience a curated journey of flavors, from hand-rolled sushi to traditional clay pot specialties, crafted with the freshest seasonal ingredients.
+                </p>
+                <!-- Features List -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-10">
+                    <div class="flex items-center gap-2 text-sm font-medium text-gray-700">
+                        <i class="fa-solid fa-circle-check text-[#7A1B1B] text-lg"></i> Seasonal Harvests
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-medium text-gray-700">
+                        <i class="fa-solid fa-circle-check text-[#7A1B1B] text-lg"></i> Takumi-Level Artistry
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-medium text-gray-700">
+                        <i class="fa-solid fa-circle-check text-[#7A1B1B] text-lg"></i>  Heirloom Techniques
+                    </div>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <button
+                        class="w-full sm:w-auto bg-[#7A1B1B] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#9B2226] transition-all hover:shadow-lg hover:shadow-gray-900/30">
+                        Book a Table
+                    </button>
+                    <button
+                        class="w-full sm:w-auto group flex items-center justify-center gap-3 bg-white border border-gray-200 text-gray-900 px-8 py-4 rounded-xl font-bold hover:text-[#7A1B1B] hover:border-[#7A1B1B] transition-all">
+                        <i class="fa-solid fa-truck-fast text-gray-600 group-hover:text-[#7A1B1B]"></i> Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Right Visual Content -->
+            <div class="relative order-1 lg:order-2">
+                <div class="w-full h-[350px] md:h-[450px] bg-gradient-to-br from-white via-gray-400 to-black rounded-[2.5rem] md:rounded-[3rem] shadow-2xl flex items-center justify-center relative overflow-hidden">
+                    <img class="w-full h-full object-cover object-center" src="images/cover2.png">
+                    <!-- Circles -->
+                    <div
+                        class="absolute top-10 right-10 w-16 h-16 md:w-20 md:h-20 bg-white/10 rounded-full overflow-hidden border-2 border-white/20 shadow-inner cursor-pointer transition-all ease-in-out hover:scale-110">
+                        <img class="w-full h-full object-contain object-center" src="images/cover-dish1.png">
+                    </div>
+                    <div
+                        class="absolute bottom-10 left-10 w-24 h-24 md:w-32 md:h-32 bg-white/10 rounded-full overflow-hidden border-2 border-white/20 shadow-inner cursor-pointer transition-all ease-in-out hover:scale-110">
+                        <img class="w-full h-full object-contain object-center" src="images/cover-dish2.png">
+                    </div>
+                </div>
+
+                <div class="absolute -bottom-4 left-4 md:-bottom-6 md:-left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-50">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-users text-[#9B2226] text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 font-medium">Happy Diners</p>
+                        <p class="text-xl font-bold text-gray-900">+800</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- serction 2 -->
+    <section class="min-h-screen bg-[#FDFBF0] space-y-5  py-16 px-4 flex flex-col gap-10 items-center">
+        <!-- the text top -->
+        <div class=" flex flex-col gap-4 items-center text-center">
+            <h3 class="text-4xl md:text-1xl font-bold text-black leading-tight ">The Full Experience</h3>
+            <p class="text-lg  text-gray-500  max-w-2xl leading-tight">Immerse yourself in a culinary journey where tradition meets modern elegance</p>
+            <div class="h-1 w-28 bg-[#A32424] rounded-full"></div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 w-full max-w-7xl">
+            <!-- each card -->
+            <div
+                class="flex flex-col gap-4 items-start flex-1 min-w-[320px] max-w-[400px] p-10 rounded-2xl border-2 border-slate-100 hover:border-[#A32424] hover:shadow-2xl hover:-translate-y-2 transition-all bg-white group">
+                <div
+                    class="w-16 h-16 bg-blue-100 group-hover:bg-[#A32424] rounded-xl flex items-center justify-center shadow-lg">
+                   <i class="fa-solid fa-utensils text-[#A32424] group-hover:text-white text-3xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold text-black">Artisanal Dim Sum</h4>
+                <p class="text-gray-500 leading-relaxed">Hand-folded daily, our dumplings are a masterclass in texture and traditional flavor.</p>
+                <ul class="space-y-4 capitalize">
+                    <li class="flex items-center gap-3 text-gray-500 ">
+                        <i class="fa-solid fa-check text-[#A32424] text-lg"></i>Farm-to-Table
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#A32424] text-lg"></i>Authentic Spices
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#A32424] text-lg"></i>Chef’s Specials
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="flex flex-col gap-4 items-start flex-1 min-w-[320px] max-w-[400px] p-10 rounded-2xl border-2 border-slate-100 hover:border-[#4F6D44] hover:shadow-2xl hover:-translate-y-2 transition-all bg-white group">
+                <div
+                    class="w-16 h-16 bg-purple-100 group-hover:bg-[#4F6D44] rounded-xl flex items-center justify-center shadow-lg">
+                   <i class="fa-solid fa-door-open text-[#4F6D44] group-hover:text-white text-3xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold text-black">Private Dining</h4>
+                <p class="text-gray-500 leading-relaxed">Host your special moments in our Zen-inspired rooms, designed for intimacy and peace.</p>
+                <ul class="space-y-4 capitalize">
+                    <li class="flex items-center gap-3 text-gray-500 ">
+                        <i class="fa-solid fa-check text-[#4F6D44] text-lg"></i>Customizable Menus
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#4F6D44] text-lg"></i>Dedicated Server
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#4F6D44] text-lg"></i>Sound-proofed Spaces
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="flex flex-col gap-4 items-start flex-1 min-w-[320px] max-w-[400px] p-10 rounded-2xl border-2 border-slate-100 hover:border-[#D4A373] hover:shadow-2xl hover:-translate-y-2  transition-all bg-white group">
+                <div
+                    class="w-16 h-16 bg-purple-100 group-hover:bg-[#D4A373] rounded-xl flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-leaf text-[#D4A373] group-hover:text-white text-3xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold text-black">Seasonal Pairings</h4>
+                <p class="text-gray-500 leading-relaxed">A curated selection of premium teas and sake, hand-picked to complement every dish.</p>
+                <ul class="space-y-4 capitalize">
+                    <li class="flex items-center gap-3 text-gray-500 ">
+                        <i class="fa-solid fa-check text-[#D4A373] text-lg"></i>Rare Vintage Sakes
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#D4A373] text-lg"></i>Organic Loose-Leaf Teas
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-check text-[#D4A373] text-lg"></i>Sommelier Guidance
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="relative bg-gradient-to-r from-[#3E2723] via-[#2D1B18] to-[#1A1110] py-20 px-4 overflow-hidden border-y border-[#C5A059]/20">
+        <!-- background circles -->
+        <div class="absolute top-[-120px] left-[-120px] w-[250px] h-[250px] bg-[#A62C21]/15  rounded-full "></div>
+        <div class="absolute bottom-[-180px] right-[-180px] w-[360px] h-[360px] bg-[#C5A059]/10  rounded-full "></div>
+        <!-- container content -->
+        <div
+            class="relative z-10 max-w-7xl mx-auto flex flex-wrap justify-around items-center gap-12 text-center text-white">
+            <!-- card each -->
+            <div class="flex flex-col gap-2 min-w-[140px] hover:scale-110 transition-all cursor-default">
+                <span class="text-6xl font-bold tracking-tight">+25</span>
+                <span class="text-xl font-medium text-blue-50/70 uppercase tracking-[0.1em]">Signature Dishes</span>
+            </div>
+            <div class="flex flex-col gap-2 min-w-[140px] hover:scale-110 transition-all cursor-default">
+                <span class="text-6xl font-bold tracking-tight">+15k</span>
+                <span class="text-xl font-medium text-blue-50/70 uppercase tracking-[0.1em]">Happy Diners</span>
+            </div>
+            <div class="flex flex-col gap-2 min-w-[140px] hover:scale-110 transition-all cursor-default">
+                <span class="text-6xl font-bold tracking-tight">+12</span>
+                <span class="text-xl font-medium text-blue-50/70 uppercase tracking-[0.1em]">Master Chefs</span>
+            </div>
+            <div class="flex flex-col gap-2 min-w-[140px] hover:scale-110 transition-all cursor-default">
+                <span class="text-6xl font-bold tracking-tight">+20</span>
+                <span class="text-xl font-medium text-blue-50/70 uppercase tracking-[0.1em]">Years of Tradition</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="min-h-screen bg-gray-50 py-20 px-6 flex flex-col items-center gap-12">
+        <!-- top text -->
+        <div class="text-center space-y-3">
+            <h2 class="text-4xl font-bold text-[#3E2723] capitalize">Our Culinary Masters</h2>
+            <p class="text-gray-500 text-lg">An elite group of world-class chefs dedicated to authentic flavors</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 w-full max-w-7xl">
+            <!-- card each -->
+            <div
+                class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col items-center w-full sm:w-[280px] text-center transition-all hover:shadow-2xl group">
+                <!-- card Top -->
+                <div
+                    class="w-full h-60 flex items-center justify-center bg-gradient-to-br from-[#3E2723] via-[#5D4037] to-[#8D6E63] relative">
+                    <div
+                        class="w-24 h-24 bg-white/70 rounded-full flex items-center justify-center transition-all group-hover:opacity-50">
+                        <i
+                            class="fa-solid fa-user bg-gradient-to-br from-[#3E2723]  to-[#8D6E63] bg-clip-text text-transparent text-5xl"></i>
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 group-hover:bg-[#3E2723]/60 transition-all  translate-y-4 group-hover:translate-y-0">
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] hover:scale-110 transition-all">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-twitter text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- card Bottom -->
+                <div class="p-6 space-y-2">
+                    <h4 class="text-xl font-bold text-[#3E2723]">Ahmed Mohamed</h4>
+                    <p class="text-[#C5A059] font-medium text-sm capitalize tracking-wider">Executive Head Chef</p>
+                    <p class="text-gray-500 text-xs leading-relaxed italic">Master of traditional wok techniques with 15 years of heritage</p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div
+                class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col items-center w-full sm:w-[280px] text-center transition-all hover:shadow-2xl group">
+                <div
+                    class="w-full h-60 flex items-center justify-center bg-gradient-to-br from-[#3E2723] via-[#5D4037] to-[#8D6E63] relative">
+                    <div
+                        class="w-24 h-24 bg-white/70 rounded-full flex items-center justify-center transition-all group-hover:opacity-50 ">
+                        <i
+                            class="fa-solid fa-user bg-gradient-to-br from-[#3E2723]  to-[#8D6E63] bg-clip-text text-transparent text-5xl"></i>
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 group-hover:bg-[#3E2723]/60 transition-all  translate-y-4 group-hover:translate-y-0">
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-twitter text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- card Bottom -->
+                <div class="p-6 space-y-2">
+                    <h4 class="text-xl font-bold text-[#3E2723]">Sara Ahmed</h4>
+                    <p class="text-[#C5A059] font-medium text-sm capitalize tracking-wider">Pastry & Dim Sum Specialist</p>
+                    <p class="text-gray-400 text-xs leading-relaxed italic">Crafting delicate, handmade treasures every morning</p>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div
+                class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col items-center w-full sm:w-[280px] text-center transition-all hover:shadow-2xl group">
+                <!-- card Top -->
+                <div
+                    class="w-full h-60 flex items-center justify-center bg-gradient-to-br from-[#3E2723] via-[#5D4037] to-[#8D6E63] relative">
+                    <div
+                        class="w-24 h-24 bg-white/70 rounded-full flex items-center justify-center transition-all group-hover:opacity-50 ">
+                        <i
+                            class="fa-solid fa-user bg-gradient-to-br from-[#3E2723]  to-[#8D6E63] bg-clip-text text-transparent text-5xl"></i>
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 group-hover:bg-[#3E2723]/60 transition-all  translate-y-4 group-hover:translate-y-0">
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-twitter text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                    </div>
+                </div>                <!-- card Bottom -->
+                <div class="p-6 space-y-2">
+                    <h4 class="text-xl font-bold text-[#3E2723]">Mohamed Ali</h4>
+                    <p class="text-[#C5A059] font-medium text-sm capitalize tracking-wider">Sous Chef</p>
+                    <p class="text-gray-400 text-xs leading-relaxed italic">Expert in flavor balancing and seasonal ingredient sourcing</p>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div
+                class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col items-center w-full sm:w-[280px] text-center transition-all hover:shadow-2xl group">
+                <!-- card Top -->
+                <div
+                    class="w-full h-60 flex items-center justify-center bg-gradient-to-br from-[#3E2723] via-[#5D4037] to-[#8D6E63] relative">
+                    <div
+                        class="w-24 h-24 bg-white/70 rounded-full flex items-center justify-center transition-all group-hover:opacity-50 ">
+                        <i
+                            class="fa-solid fa-user bg-gradient-to-br from-[#3E2723]  to-[#8D6E63] bg-clip-text text-transparent text-5xl"></i>
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 group-hover:bg-[#3E2723]/60 transition-all  translate-y-4 group-hover:translate-y-0">
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-twitter text-sm"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 bg-white hover:bg-white/70 rounded-full flex items-center justify-center text-[#3E2723] transition-all hover:scale-110">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- card Bottom -->
+                <div class="p-6 space-y-2">
+                    <h4 class="text-xl font-bold text-[#3E2723]">Noura Khaled</h4>
+                    <p class="text-[#C5A059] font-medium text-sm capitalize tracking-wider">Restaurant Manager</p>
+                    <p class="text-gray-400 text-xs leading-relaxed italic">Ensuring every guest experiences the true art of hospitality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 -->
+    <section class="bg-[#3E2723] py-20 px-6 flex flex-wrap justify-center gap-12 text-[#FDFBF0]">
+        <!-- left form -->
+        <div class="bg-[#2D1B19] p-8 rounded-3xl w-full max-w-xl shadow-2xl border border-[#FDFBF0]/10  flex flex-col gap-6">
+            <h3 class="text-3xl font-bold">Make a Reservation</h3>
+            <form class="flex flex-col gap-4">
+                <input type="text" placeholder="Full Name"
+                    class="bg-[#3E2723] border-none rounded-xl p-4 text-white placeholder-[#FDFBF0]/50 focus:ring-2 focus:ring-[#C62828]/50 outline-none">
+
+                <input type="email" placeholder="Email Address"
+                    class="bg-[#3E2723] border-none rounded-xl p-4 text-white placeholder-[#FDFBF0]/50 focus:ring-2 focus:ring-[#C62828]/50 outline-none">
+
+                <textarea placeholder="Your message..." rows="6"
+                    class="bg-[#3E2723] border-none rounded-xl p-4 text-white placeholder-[#FDFBF0]/50 focus:ring-2 focus:ring-[#C62828]/50 outline-none"></textarea>
+               <div class="flex flex-col sm:flex-row justify-evenly gap-4">
+                <input type="date" class="flex-1 bg-[#3E2723] border-none rounded-xl p-4 text-white placeholder-[#FDFBF0]/50 focus:ring-2 focus:ring-[#C62828]/50 outline-none w-full">
+                <input type="time" class="flex-1 bg-[#3E2723] border-none rounded-xl p-4 text-white placeholder-[#FDFBF0]/50 focus:ring-2 focus:ring-[#C62828]/50 outline-none w-full">
+               </div>
+                    
+                <button
+                    class="bg-[#3E2723] hover:bg-[#C62828] text-[#FDFBF0] font-bold py-4 rounded-xl transition-colors hover:shadow-lg hover:shadow-[#FDFBF0]/20 active:scale-95">
+                    Reserve
+                </button>
+            </form>
+        </div>
+        <!-- right info -->
+        <div class="w-full max-w-xl flex flex-col gap-10 text-[#FDFBF0]">
+            <div class="space-y-8">
+                <h3 class="text-3xl font-bold text-[#FDFBF0]">Contact Information</h3>
+                <div class="flex flex-col gap-6">
+                    <!-- address  -->
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 bg-[#2D1B19] rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot text-[#FDFBF0] text-xl group-hover:text-[#C62828]/50"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#FDFBF0]/60 text-sm font-medium">Address</p>
+                            <p class="font-bold text-[#FDFBF0]">Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <!-- phone  -->
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 bg-[#2D1B19] rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-[#FDFBF0] text-xl group-hover:text-[#C62828]/50"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#FDFBF0]/60 text-sm font-medium">Phone</p>
+                            <p class="font-bold text-[#FDFBF0]">+20 123 456 7890</p>
+                        </div>
+                    </div>
+                    <!-- email  -->
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 bg-[#2D1B19] rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-clock text-[#FDFBF0] text-xl group-hover:text-[#C62828]/50"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#FDFBF0]/60 text-sm font-medium">Open Daily</p>
+                            <p class="font-bold text-[#FDFBF0]">12:00 PM – 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  map -->
+            <div
+                class="w-full h-48 bg-gradient-to-br from-[#5D4037] via-[#4E342E] to-[#5D4037] rounded-3xl flex flex-col items-center justify-center gap-2 opacity-90 hover:opacity-100 transition-all cursor-pointer hover:shadow-lg hover:shadow-[#FDFBF0]/10 border border-[#FDFBF0]/20">
+                <i class="fa-solid fa-map-location-dot text-white/80 text-4xl"></i>
+                <span class="text-[#FDFBF0] font-bold tracking-widest">Site Map</span>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class="bg-[#3E2723]  border-t border-[#C62828]/50 py-8 px-10 w-full flex flex-col md:flex-row justify-between items-center gap-6  text-[#FDFBF0]">
+        <p class="text-[#FDFBF0] text-sm">© 2024 Asian flavors. All rights reserved.</p>
+        <!-- icons right -->
+        <div class="flex items-center gap-6">
+            <a href="#" class="hover:text-[#C62828]  text-xl transition-all"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-[#C62828]  text-xl transition-all"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-[#C62828] text-xl transition-all"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="hover:text-[#C62828] text-xl transition-all"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+  <script>
+
+    var btn = document.getElementById('menu-btn');
+    var nav = document.getElementById('nav-links');
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+    });
+    </script>
+</html>
